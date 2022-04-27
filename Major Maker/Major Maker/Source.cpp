@@ -7,7 +7,7 @@ void majorSelection()
 	std::cout << "Insert Name and Major\n";
 	std::cout << "1.Welding Technology, Associate of Applied Science\n2.General Studies, Associate of Arts\n"
 		<< "3.Accounting, Associate of Applied Science\n4.Real Estate, Associate of Applied Science\n"
-		<< "5.Eye Care Technology, Associate of Applied Science";
+		<< "5.Eye Care Technology, Associate of Applied Science" << endl;
 	
 }
 
@@ -32,27 +32,31 @@ void menu()
 			majorSelection();
 			cin >> userName; // get name and major
 			cin >> majorNum;
-			if (majorNum = 1)
-			{
-				cout << userName << " You have pick Welding Technology, Associate of Applied Science";
-			}
-			else if (majorNum = 2)
-			{
-				cout << userName << " You have pick General Studies, Associate of Arts";
-			}
-			else if (majorNum = 3)
-			{
-				cout << userName << " You have pick Accounting, Associate of Applied Science";
-			}
-			else if (majorNum = 4)
-			{
-				cout << userName << " You have pick Real Estate, Associate of Applied Science";
-			}
-			else
-			{
-				cout << userName << " You have pick Eye Care Technology, Associate of Applied Science";
-			}
 
+			switch (majorNum)
+			{
+			case 1:
+				cout << userName << " You have pick Welding Technology, Associate of Applied Science" << endl;
+				running = false;
+				break;
+			case 2:
+				cout << userName << " You have pick General Studies, Associate of Arts" << endl;
+				running = false;
+				break;
+			case 3:
+				cout << userName << " You have pick Accounting, Associate of Applied Science" << endl;
+				running = false;
+				break;
+			case 4:
+				cout << userName << " You have pick Real Estate, Associate of Applied Science" << endl;
+				running = false;
+				break;
+			case 5:
+				cout << userName << " You have pick Eye Care Technology, Associate of Applied Science" << endl;
+				running = false;
+				break;
+			}
+			
 			running = false;
 			break;
 		case 1:
