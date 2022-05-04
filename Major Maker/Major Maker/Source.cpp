@@ -4,7 +4,7 @@ using namespace std;
 void majorSelection()
 {
 
-	std::cout << "Insert Name and Major\n";
+	std::cout << "Insert First Name and Major\n";
 	std::cout << "1.Welding Technology, Associate of Applied Science\n2.General Studies, Associate of Arts\n"
 		<< "3.Accounting, Associate of Applied Science\n4.Real Estate, Associate of Applied Science\n"
 		<< "5.Eye Care Technology, Associate of Applied Science" << endl;
